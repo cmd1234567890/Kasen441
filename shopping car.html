@@ -1,0 +1,362 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Home Page</title>  
+    <style>
+        body {  
+    margin: 0;  
+    padding: 0;  
+    font-family: Arial, sans-serif;  
+}  
+  
+header {  
+    background-color: #ff9eec;  
+    color: #fff;  
+    padding: 10px 0;  
+    text-align: center;  
+}  
+  
+nav ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;  
+    overflow: hidden;  
+    background-color: #333;  
+}  
+  
+nav li {  
+    float: left;  
+}  
+  
+nav li a {  
+    display: block;  
+    color: white;  
+    text-align: center;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+}  
+  
+nav li a:hover {  
+    background-color: #111;  
+}  
+  
+main {  
+    padding: 20px;  
+    text-align: center;  
+}  
+  
+h1 {  
+    margin-top: 0;  
+}  
+
+
+
+
+
+h1 {  
+  text-align: center;  
+  color: #333;  
+}  
+  
+.course {  
+  margin-bottom: 20px;  
+  padding: 10px;  
+  background-color: #fff;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+  
+.course h2 {  
+  margin-top: 0;  
+}  
+  
+.course .price {  
+  color: #666;  
+  font-weight: bold;  
+}  
+  
+.course .add-to-cart {  
+  margin-top: 10px;  
+  padding: 5px 10px;  
+  background-color: #4CAF50; /* green */  
+  color: #fff;  
+  border: none;  
+  border-radius: 4px;  
+  cursor: pointer;  
+}  
+  
+.course .add-to-cart:hover {  
+  background-color: #45a049; /* color */  
+}  
+  
+#cart {  
+  margin-top: 30px;  
+  background-color: #fff;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+  
+#cart h2 {  
+  padding: 10px;  
+  margin: 0;  
+  background-color: #4CAF50; /* green */  
+  color: #fff;  
+  text-align: center;  
+}  
+  
+#cart-table {  
+  width: 100%;  
+  border-collapse: collapse;  
+}  
+  
+#cart-table th, #cart-table td {  
+  padding: 8px;  
+  text-align: left;  
+  border-bottom: 1px solid #ddd;  
+}  
+  
+#cart-table th {  
+  background-color: #f2f2f2;  
+}  
+  
+#cart-total {  
+  margin-top: 10px;  
+  padding: 10px;  
+  background-color: #eee;  
+  text-align: right;  
+  font-weight: bold;  
+}  
+  
+
+@media (max-width: 600px) {  
+  #cart-table, #cart-table th, #cart-table td {  
+    display: block;  
+  }  
+  
+  #cart-table thead {  
+    display: none;  
+  }  
+  
+  #cart-table td {  
+    border: none;  
+    border-bottom: 1px solid #ddd;  
+    position: relative;  
+    padding-left: 50%;  
+  }  
+  
+  #cart-table td:before {  
+    position: absolute;  
+    top: 6px;  
+    left: 6px;  
+    width: 45%;  
+    padding-right: 10px;  
+    white-space: nowrap;  
+  }  
+  
+  #cart-table td:nth-of-type(1):before { content: "course name"; }  
+  #cart-table td:nth-of-type(2):before { content: "price"; }  
+  #cart-table td:nth-of-type(3):before { content: "quantities"; }  
+  #cart-table td:nth-of-type(4):before { content: "total price"; }  
+}
+#clear-cart {  
+  background-color: #ff4500;  
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}  
+  
+#clear-cart:hover {  
+  background-color: #cc3300;   
+}  
+  
+ 
+#calculate-total {  
+  background-color: #4CAF50;   
+  color: white; 
+  border: none; 
+  padding: 10px 20px;
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;  
+}  
+  
+#calculate-total:hover {  
+  background-color: #45a049; 
+}
+  
+footer {  
+    position: fixed;  
+    left: 0;  
+    bottom: 0;  
+    width: 100%;  
+    background-color: #333;  
+    color: white;  
+    text-align: center;  
+    padding: 10px 0;  
+}
+    </style>
+</head>  
+<body>  
+    <header>  
+        <nav>  
+            <ul>  
+                <li><a href="Home.html">Home</a></li>  
+                <li><a href="about.html">About Us</a></li>  
+                <li><a href="courseware.html">Courseware</a></li>  
+                <li><a href="showcase.html">showcase</a></li>  
+                <li><a href="project.html">Project(shopping car)</a></li>  
+            </ul>  
+        </nav>  
+    </header>  
+    <main>  
+        <h1>project</h1>  
+        <h1>shopping car</h1>  
+  
+<div class="courses">  
+  <div class="course" data-price="10">  
+    <h2>course 1 - 10￥</h2>  
+    <input type="number" class="quantity" min="1" value="1">  
+    <button class="add-to-cart">add</button>  
+  </div>  
+  <div class="course" data-price="20">  
+    <h2>course 2 - 20￥</h2>  
+    <input type="number" class="quantity" min="1" value="1">  
+    <button class="add-to-cart">add</button>  
+  </div>  
+  <div class="course" data-price="35">  
+    <h2>course 3 - 35￥</h2>  
+    <input type="number" class="quantity" min="1" value="1">  
+    <button class="add-to-cart">add</button>  
+  </div>  
+  <div class="course" data-price="50">  
+    <h2>course 4 - 50￥</h2>  
+    <input type="number" class="quantity" min="1" value="1">  
+    <button class="add-to-cart">add</button>  
+  </div>  
+  <div class="course" data-price="65">  
+    <h2>course 5 - 65￥</h2>  
+    <input type="number" class="quantity" min="1" value="1">  
+    <button class="add-to-cart">add</button>  
+  </div>  
+  <div class="course" data-price="75">  
+    <h2>course 6 - 75￥</h2>  
+    <input type="number" class="quantity" min="1" value="1">  
+    <button class="add-to-cart">add</button>  
+  </div>  
+  <div class="course" data-price="80">  
+    <h2>course 7 - 80￥</h2>  
+    <input type="number" class="quantity" min="1" value="1">  
+    <button class="add-to-cart">add</button>  
+  </div>  
+  <div class="course" data-price="85">  
+    <h2>course 8 - 85￥</h2>  
+    <input type="number" class="quantity" min="1" value="1">  
+    <button class="add-to-cart">add</button>  
+  </div>  
+</div>  
+  
+<table id="cart-table">  
+  <thead>  
+    <tr>  
+      <th>course name</th>  
+      <th>price(￥)</th>  
+      <th>quantities</th>  
+      <th>total price(￥)</th>  
+      <th></th>  
+    </tr>  
+  </thead>  
+
+  <tbody>  
+
+  </tbody> 
+</table>  
+<button id="clear-cart">clear-cart</button>  
+<button id="calculate-total">calculate-total</button>  
+<p id="total-price">total: 0￥</p> 
+    </main>  
+
+    <footer>  
+        <p>This is the footer content.</p>  
+    </footer>  
+    <script>
+           document.addEventListener('DOMContentLoaded', function() {  
+  const courses = document.querySelectorAll('.course');  
+  const cartTableBody = document.querySelector('#cart-table tbody');  
+  const clearCartButton = document.querySelector('#clear-cart');  
+  const calculateTotalButton = document.querySelector('#calculate-total');  
+  const totalPriceElement = document.querySelector('#total-price');  
+  let cartItems = []; 
+  let totalPrice = 0; // tatalprice
+  
+  // add course
+  courses.forEach(course => {  
+    const addButton = course.querySelector('.add-to-cart');  
+    addButton.addEventListener('click', function() {  
+      const courseName = course.querySelector('h2').textContent.trim();  
+      const price = parseFloat(course.dataset.price);  
+      const quantity = parseInt(course.querySelector('.quantity').value, 10);  
+      const item = { name: courseName, price, quantity };  
+      cartItems.push(item);  
+      displayCart();  
+      calculateTotal();  
+    });  
+  });  
+    
+  function displayCart() {  
+    cartTableBody.innerHTML = '';  
+    cartItems.forEach(item => {  
+      const row = document.createElement('tr');  
+      row.innerHTML = `  
+        <td>${item.name}</td>  
+        <td>${item.price.toFixed(2)}￥</td>  
+        <td>${item.quantity}</td>  
+        <td>${(item.price * item.quantity).toFixed(2)}￥</td>  
+        <td><button class="remove-item">remove</button></td>  
+      `;  
+      const removeButton = row.querySelector('.remove-item');  
+      removeButton.addEventListener('click', function() {  
+        removeCartItem(item);  
+      });  
+      cartTableBody.appendChild(row);  
+    });  
+  }  
+  
+  // remove course  
+  function removeCartItem(item) {  
+    const index = cartItems.indexOf(item);  
+    if (index !== -1) {  
+      cartItems.splice(index, 1);  
+      displayCart();  
+      calculateTotal();  
+    }  
+  }  
+  
+  // clear car 
+  clearCartButton.addEventListener('click', function() {  
+    cartItems = [];  
+    displayCart();  
+    calculateTotal();  
+  });  
+  
+  // total price 
+  function calculateTotal() {  
+    totalPrice = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);  
+    totalPriceElement.textContent = `total: ${totalPrice.toFixed(2)}￥`;  
+  }  
+  
+  // update total 
+  calculateTotal();  
+});
+document.getElementById('calculate-total').addEventListener('click', function() {  
+    
+    var totalPriceText = document.getElementById('total-price').textContent || document.getElementById('total-price').innerText;  
+      
+    
+    alert(totalPriceText);  
+});
+    </script>  
+</body>  
+</html>

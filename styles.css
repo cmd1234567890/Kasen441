@@ -1,0 +1,99 @@
+body {  
+    margin: 0;  
+    padding: 0;  
+    font-family: Arial, sans-serif;  
+    
+}  
+h2{
+    font-family: 'Arial', sans-serif; 
+    font-size: 30px;  
+    color: #333;  
+    font-weight: bold;  
+    font-style: italic;  
+    text-align: center; 
+    animation-name: textColorChange;  
+    
+  
+  animation-duration: 2s;  
+    
+    
+  animation-iteration-count: infinite;  
+    
+   
+  animation-direction: alternate;  
+    
+   
+  animation-timing-function: ease-in-out;   
+}
+@keyframes textColorChange {  
+  0% { color: red; }  
+  50% { color: blue; }  
+  100% { color: green; } }
+  
+header {  
+    background-color: #ff9eec;  
+    color: #fff;  
+    padding: 10px 0;  
+    text-align: center;  
+}  
+  
+nav ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;  
+    overflow: hidden;  
+    background-color: #333;  
+}  
+  
+nav li {  
+    float: left;  
+}  
+  
+nav li a {  
+    display: block;  
+    color: white;  
+    text-align: center;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+}  
+  
+nav li a:hover {  
+    background-color: #111;  
+}  
+  
+main {  
+    padding: 300px;  
+    text-align: center;  
+    background-color: #845c5c;
+}  
+  
+h1 {  
+    margin-top: 0;  
+}  
+  
+footer {  
+    position: fixed;  
+    left: 0;  
+    bottom: 0;  
+    width: 100%;  
+    background-color: #333;  
+    color: white;  
+    text-align: center;  
+    padding: 10px 0;  
+}
+
+
+
+
+.logo {  
+    width: 10px;  
+    height: 10px; 
+    margin: 0;
+    animation: blink 1s infinite; 
+}  
+  
+@keyframes blink {  
+    0% { opacity: 1; }  
+    50% { opacity: 0; }  
+    100% { opacity: 1; }  
+}

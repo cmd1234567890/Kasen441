@@ -1,0 +1,114 @@
+body {  
+    margin: 0;  
+    padding: 0;  
+    font-family: Arial, sans-serif;  
+    background-color: #845c5c;
+}  
+
+  
+header {  
+    background-color: #ff9eec;  
+    color: #fff;  
+    padding: 10px 0;  
+    text-align: center;  
+}  
+  
+nav ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;  
+    overflow: hidden;  
+    background-color: #333;  
+}  
+  
+nav li {  
+    float: left;  
+}  
+  
+nav li a {  
+    display: block;  
+    color: white;  
+    text-align: center;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+}  
+  
+nav li a:hover {  
+    background-color: #111;  
+}  
+  
+
+  
+h1 {  
+    text-align: center;
+    margin-top: 0;  
+}  
+  
+footer {  
+    position: fixed;  
+    left: 0;  
+    bottom: 0;  
+    width: 100%;  
+    background-color: #333;  
+    color: white;  
+    text-align: center;  
+    padding: 10px 0;  
+}
+
+
+
+.container {  
+    text-align: center;  
+    padding: 20px;  
+    border: 3px solid #dde46e;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+    width: 300px;  
+    background-color: #5759f8;  
+  }  
+  
+  .container label {  
+    margin-bottom: 5px;  
+    display: block;  
+  }  
+  
+  .container input[type="text"],  
+  .container input[type="password"] {  
+    width: 100%;  
+    padding: 8px;  
+    margin-bottom: 15px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+  }  
+  
+  button {  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    font-size: 16px;  
+  }  
+  
+  button.button-link {  
+    background: none;  
+    color: blue;  
+    text-decoration: underline;  
+    padding: 0;  
+    font-size: 16px;  
+    cursor: pointer;  
+  }  
+  
+  button.button-link:hover {  
+    text-decoration: none;  
+  }  
+  
+  .create-btn, .delete-btn {  
+    background-color: #007bff;  
+    color: white;  
+  }  
+  
+  .create-btn:hover, .delete-btn:hover {  
+    background-color: #0056b3;  
+  }
+  
+
